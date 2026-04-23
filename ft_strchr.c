@@ -30,20 +30,12 @@ char	*ft_strchr(const char *str, int c)
 
 /*
 #include <stdio.h>
+#include <string.h>
 int	main(void)
 {
-	char	*res;
-
-	res = ft_strchr("bonjour", 'q');
-	if (res)
-		printf("%s\n", res);
-	else
-		printf("(null)\n");
-	res = ft_strchr("bonjour", 'j');
-	if (res)
-		printf("%s\n", res);
-	else
-		printf("(null)\n");
+	printf("[%s | %s]\n", ft_strchr("bonjour", 'j'), strchr("bonjour", 'j'));
+	printf("[%p | %p]\n", ft_strchr("bonjour", 'z'), strchr("bonjour", 'z'));
+	printf("[%s | %s]\n", ft_strchr("hello", '\0'), strchr("hello", '\0'));
 	return (0);
 }
 */

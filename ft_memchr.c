@@ -11,7 +11,6 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
-#include <string.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {
@@ -31,14 +30,15 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	return (NULL);
 }
 
-/*#include <stdio.h>
-int	main(void){
-	void	*result;
-	void	*result2;
-	
-	result2 = ft_memchr("coucou", 'c', 4);
-	result = ft_memchr("coucou", 'a', 4);
-	printf("%p\n", result);
-	printf("%c\n", *(char *)result2);
+/*
+#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+	printf("[%p | %p]\n", ft_memchr("coucou", 'u', 6), memchr("coucou", 'u', 6));
+	printf("[%p | %p]\n", ft_memchr("coucou", 'z', 6), memchr("coucou", 'z', 6));
+	printf("[%p | %p]\n", ft_memchr("coucou", 'c', 0), memchr("coucou", 'c', 0));
+	printf("[%p | %p]\n", ft_memchr("abc\0de", '\0', 6), memchr("abc\0de", '\0', 6));
 	return (0);
-}*/
+}
+*/

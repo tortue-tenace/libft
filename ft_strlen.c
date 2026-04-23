@@ -21,3 +21,15 @@ size_t	ft_strlen(const char *str)
 		i++;
 	return (i);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+	printf("[%zu | %zu]\n", ft_strlen("Hello"), strlen("Hello"));
+	printf("[%zu | %zu]\n", ft_strlen(""), strlen(""));
+	printf("[%zu | %zu]\n", ft_strlen("a"), strlen("a"));
+	return (0);
+}
+*/

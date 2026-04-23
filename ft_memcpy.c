@@ -25,3 +25,21 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 		*pdest++ = *psrc++;
 	return (dest);
 }
+
+/*
+#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+	char	a[10];
+	char	b[10];
+
+	ft_memcpy(a, "hello", 6);
+	memcpy(b, "hello", 6);
+	printf("[%s | %s]\n", a, b);
+	ft_memcpy(a, "abc", 0);
+	memcpy(b, "abc", 0);
+	printf("[%s | %s]\n", a, b);
+	return (0);
+}
+*/

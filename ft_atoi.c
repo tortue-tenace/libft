@@ -40,3 +40,17 @@ int	ft_atoi(const char *str)
 	}
 	return (result * sign);
 }
+
+/*
+#include <stdio.h>
+#include <stdlib.h>
+int	main(void)
+{
+	printf("[%d | %d]\n", ft_atoi("  -42abc"), atoi("  -42abc"));
+	printf("[%d | %d]\n", ft_atoi("+2147483647"), atoi("+2147483647"));
+	printf("[%d | %d]\n", ft_atoi("\t\n\v  7"), atoi("\t\n\v  7"));
+	printf("[%d | %d]\n", ft_atoi(""), atoi(""));
+	printf("[%d | %d]\n", ft_atoi("--5"), atoi("--5"));
+	return (0);
+}
+*/

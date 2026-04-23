@@ -19,12 +19,12 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	size_t	dst_len;
 
 	dst_len = 0;
-	while (dst[dst_len])
+	while (dst_len < size && dst[dst_len])
 		dst_len++;
 	src_len = 0;
 	while (src[src_len])
 		src_len++;
-	if (size <= dst_len)
+	if (dst_len == size)
 		return (size + src_len);
 	i = 0;
 	while (i < size - dst_len - 1 && src[i])
@@ -36,14 +36,19 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	return (dst_len + src_len);
 }
 
-/*int main(void){
-	char	dst[] = "Hello";
-	size_t real;
-	size_t me;
+/*
+#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+	char	a[20] = "Hi";
+	char	b[20] = "Hi";
+	size_t	r1;
+	size_t	r2;
 
-	me = ft_strlcat(dst, "", sizeof(dst));
-	real = strlcat(dst, "", sizeof(dst));
-	printf("%zu\n", me);
-	printf("%zu\n", real);
+	r1 = ft_strlcat(a, " there", sizeof(a));
+	r2 = strlcat(b, " there", sizeof(b));
+	printf("[%s|%zu | %s|%zu]\n", a, r1, b, r2);
 	return (0);
-}*/
+}
+*/

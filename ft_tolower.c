@@ -16,3 +16,19 @@ int	ft_tolower(int c)
 		return (c + 32);
 	return (c);
 }
+
+/*
+#include <stdio.h>
+#include <ctype.h>
+int	main(void)
+{
+	int	c;
+
+	c = -1;
+	while (++c < 256)
+		if (ft_tolower(c) != tolower(c))
+			printf("DIFF at %d\n", c);
+	printf("done\n");
+	return (0);
+}
+*/

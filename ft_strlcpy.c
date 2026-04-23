@@ -32,14 +32,19 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	return (len);
 }
 
-/*int main(void){
-	char	dst[8];
-	size_t real;
-	size_t me;
+/*
+#include <stdio.h>
+#include <string.h>
+int	main(void)
+{
+	char	a[5];
+	char	b[5];
+	size_t	r1;
+	size_t	r2;
 
-	me = ft_strlcpy(dst, "pate", sizeof(dst));
-	real = strlcpy(dst, "lklklkl", sizeof(dst));
-	printf("%zu\n", me);
-	printf("%zu\n", real);
+	r1 = ft_strlcpy(a, "Hello", sizeof(a));
+	r2 = strlcpy(b, "Hello", sizeof(b));
+	printf("[%s|%zu | %s|%zu]\n", a, r1, b, r2);
 	return (0);
-}*/
+}
+*/

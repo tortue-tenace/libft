@@ -17,9 +17,18 @@ int	ft_toupper(int c)
 	return (c);
 }
 
-/*int	main(void)
+/*
+#include <stdio.h>
+#include <ctype.h>
+int	main(void)
 {
-	printf("%c\n", ft_toupper('a'));
-	printf("%c\n", toupper('a'));
+	int	c;
+
+	c = -1;
+	while (++c < 256)
+		if (ft_toupper(c) != toupper(c))
+			printf("DIFF at %d\n", c);
+	printf("done\n");
 	return (0);
-}*/
+}
+*/

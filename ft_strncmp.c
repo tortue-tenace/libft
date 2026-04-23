@@ -26,17 +26,15 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	return (0);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <string.h>
 int	main(void)
 {
-	printf("me:  %d\n", ft_strncmp("foufou", "fifou", 3));
-	printf("sys: %d\n", strncmp("foufou", "fifou", 3));
-	printf("me:  %d\n", ft_strncmp("abc", "abc", 10));
-	printf("sys: %d\n", strncmp("abc", "abc", 10));
-	printf("me:  %d\n", ft_strncmp("abc", "abcd", 10));
-	printf("sys: %d\n", strncmp("abc", "abcd", 10));
-	printf("me:  %d\n", ft_strncmp("abc", "abc", 0));
-	printf("sys: %d\n", strncmp("abc", "abc", 0));
+	printf("[%d | %d]\n", ft_strncmp("foufou", "fifou", 3), strncmp("foufou", "fifou", 3));
+	printf("[%d | %d]\n", ft_strncmp("abc", "abc", 10), strncmp("abc", "abc", 10));
+	printf("[%d | %d]\n", ft_strncmp("abc", "abcd", 10), strncmp("abc", "abcd", 10));
+	printf("[%d | %d]\n", ft_strncmp("abc", "abc", 0), strncmp("abc", "abc", 0));
 	return (0);
-}*/
+}
+*/

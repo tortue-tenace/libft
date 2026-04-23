@@ -22,18 +22,17 @@ void	*ft_memset(void *s, int c, size_t n)
 	return (s);
 }
 
-/*int main(void)
+/*
+#include <stdio.h>
+#include <string.h>
+int	main(void)
 {
-    char str[6];
+	char	a[10] = "Hello";
+	char	b[10] = "Hello";
 
-    str[0] = 'H';
-    str[1] = 'e';
-    str[2] = 'l';
-    str[3] = 'l';
-    str[4] = 'o';
-    str[5] = '\0';
-    printf("%s\n", str);
-    memset(str, 'A', 3);
-    printf("%s\n", str);
-    return (0);
-}*/
+	ft_memset(a, 'X', 3);
+	memset(b, 'X', 3);
+	printf("[%s | %s]\n", a, b);
+	return (0);
+}
+*/

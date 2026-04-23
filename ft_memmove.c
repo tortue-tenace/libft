@@ -38,17 +38,20 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
 #include <string.h>
 int	main(void)
 {
-	char	buf1[] = "Hello World";
-	char	buf2[] = "aaaaaaaaaaaaaabbbbbbbbbbbbb";
-	char	dest[50];
+	char	a[20] = "abcdefgh";
+	char	b[20] = "abcdefgh";
 
-	printf("%s\n", (char *)ft_memmove(dest, buf1, 0));
-	printf("%s\n", (char *)ft_memmove(buf2, buf1, 5));
-	printf("%s\n", (char *)memmove(dest, buf1, 0));
-	printf("%s\n", (char *)memmove(buf2, buf1, 5));
+	ft_memmove(a + 2, a, 5);
+	memmove(b + 2, b, 5);
+	printf("[%s | %s]\n", a, b);
+	ft_memmove(a, a + 2, 5);
+	memmove(b, b + 2, 5);
+	printf("[%s | %s]\n", a, b);
 	return (0);
-}*/
+}
+*/

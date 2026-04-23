@@ -19,9 +19,18 @@ int	ft_isalnum(int c)
 	return (0);
 }
 
-/*#include <stdio.h>
+/*
+#include <stdio.h>
+#include <ctype.h>
 int	main(void)
 {
-	printf("%d", ft_isalnum('7'));
+	int	c;
+
+	c = -1;
+	while (++c < 256)
+		if (!ft_isalnum(c) != !isalnum(c))
+			printf("DIFF at %d\n", c);
+	printf("done\n");
 	return (0);
-}*/
+}
+*/

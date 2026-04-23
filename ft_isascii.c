@@ -16,3 +16,19 @@ int	ft_isascii(int c)
 		return (1);
 	return (0);
 }
+
+/*
+#include <stdio.h>
+#include <ctype.h>
+int	main(void)
+{
+	int	c;
+
+	c = -1;
+	while (++c < 256)
+		if (!ft_isascii(c) != !isascii(c))
+			printf("DIFF at %d\n", c);
+	printf("done\n");
+	return (0);
+}
+*/
