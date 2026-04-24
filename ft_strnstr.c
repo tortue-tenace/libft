@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tattal <tattal@student.42.fr>              +#+  +:+       +#+        */
+/*   By: thattal <thattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 11:53:08 by thattal           #+#    #+#             */
-/*   Updated: 2026/04/23 12:35:31 by tattal           ###   ########.fr       */
+/*   Updated: 2026/04/24 12:27:57 by thattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,10 +37,7 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 #include <string.h>
 int	main(void)
 {
-	printf("[%s | %s]\n", ft_strnstr("Hello World", "World", 11), strnstr("Hello World", "World", 11));
-	printf("[%p | %p]\n", ft_strnstr("Hello World", "World", 5), strnstr("Hello World", "World", 5));
 	printf("[%s | %s]\n", ft_strnstr("abc", "", 3), strnstr("abc", "", 3));
-	printf("[%p | %p]\n", ft_strnstr("Hello", "xyz", 5), strnstr("Hello", "xyz", 5));
 	return (0);
 }
 */

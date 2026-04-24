@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tattal <tattal@student.42.fr>              +#+  +:+       +#+        */
+/*   By: thattal <thattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 14:55:21 by tattal            #+#    #+#             */
-/*   Updated: 2026/04/23 17:01:47 by tattal           ###   ########.fr       */
+/*   Updated: 2026/04/24 12:27:02 by thattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,8 +90,7 @@ char	**ft_split(char const *s, char c)
 	return (result);
 }
 
-
-#include <stdio.h>
+/*#include <stdio.h>
 int	main(void)
 {
 	char	**r;
@@ -105,4 +104,4 @@ int	main(void)
 		free(r[i]);
 	free(r);
 	return (0);
-}
+}*/

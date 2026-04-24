@@ -1,37 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: thattal <thattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/21 20:11:38 by tattal            #+#    #+#             */
-/*   Updated: 2026/04/24 12:27:31 by thattal          ###   ########.fr       */
+/*   Created: 2026/04/24 15:40:48 by thattal           #+#    #+#             */
+/*   Updated: 2026/04/24 15:59:44 by thattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
+#include "libft.h"
 
-int	ft_strncmp(const char *s1, const char *s2, size_t n)
+void	ft_putchar_fd(char c, int fd)
 {
-	size_t	i;
+	write(fd, &c, 1);
+}
 
-	i = 0;
-	while (i < n && (s1[i] != '\0' || s2[i] != '\0'))
+void	ft_putnbr_fd(int n, int fd)
+{
+	long	nb;
+
+	nb = n;
+	if (nb < 0)
 	{
-		if (s1[i] != s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		i++;
+		write(fd, "-", 1);
+		nb = -nb;
 	}
-	return (0);
+	if (nb >= 10)
+	{
+		ft_putnbr_fd(nb / 10, fd);
+	}
+	ft_putchar_fd((nb % 10) + '0', fd);
 }
 
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
+/*int	main(void)
 {
-	printf("[%d | %d]\n", ft_strncmp("abc", "abc", 0), strncmp("abc", "abc", 0));
-	return (0);
-}
-*/
+	ft_putnbr_fd(34587854, 1);
+	write(1, "\n", 1);
+}*/

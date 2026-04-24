@@ -6,7 +6,7 @@
 /*   By: thattal <thattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 11:18:04 by thattal           #+#    #+#             */
-/*   Updated: 2026/04/22 11:34:29 by thattal          ###   ########.fr       */
+/*   Updated: 2026/04/24 12:26:36 by thattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,6 @@ int	main(void)
 	printf("[%p | %p]\n", ft_memchr("coucou", 'u', 6), memchr("coucou", 'u', 6));
 	printf("[%p | %p]\n", ft_memchr("coucou", 'z', 6), memchr("coucou", 'z', 6));
 	printf("[%p | %p]\n", ft_memchr("coucou", 'c', 0), memchr("coucou", 'c', 0));
-	printf("[%p | %p]\n", ft_memchr("abc\0de", '\0', 6), memchr("abc\0de", '\0', 6));
 	return (0);
 }
 */

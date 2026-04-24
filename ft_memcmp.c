@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tattal <tattal@student.42.fr>              +#+  +:+       +#+        */
+/*   By: thattal <thattal@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/22 11:35:50 by thattal           #+#    #+#             */
-/*   Updated: 2026/04/23 12:36:15 by tattal           ###   ########.fr       */
+/*   Updated: 2026/04/24 12:26:47 by thattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,6 @@ int	main(void)
 	printf("[%d | %d]\n", ft_memcmp("abc", "abd", 3), memcmp("abc", "abd", 3));
 	printf("[%d | %d]\n", ft_memcmp("abc", "abc", 3), memcmp("abc", "abc", 3));
 	printf("[%d | %d]\n", ft_memcmp("abc", "abd", 0), memcmp("abc", "abd", 0));
-	printf("[%d | %d]\n", ft_memcmp("\xff", "\x01", 1), memcmp("\xff", "\x01", 1));
 	return (0);
 }
 */
