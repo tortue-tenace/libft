@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thattal <thattal@student.42.fr>            +#+  +:+       +#+        */
+/*   By: tattal <tattal@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/20 11:58:33 by thattal           #+#    #+#             */
-/*   Updated: 2026/04/21 16:45:00 by thattal          ###   ########.fr       */
+/*   Updated: 2026/04/23 14:56:21 by tattal           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define LIBFT_H
 
 # include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -39,5 +41,6 @@ char	*ft_strnstr(const char *big, const char *little, size_t len);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
+char	**ft_split(char const *s, char c);
 
 #endif
