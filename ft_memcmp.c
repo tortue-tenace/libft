@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stddef.h>
-
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*ptr;
@@ -33,15 +31,3 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	printf("[%d | %d]\n", ft_memcmp("abc", "abd", 3), memcmp("abc", "abd", 3));
-	printf("[%d | %d]\n", ft_memcmp("abc", "abc", 3), memcmp("abc", "abc", 3));
-	printf("[%d | %d]\n", ft_memcmp("abc", "abd", 0), memcmp("abc", "abd", 0));
-	return (0);
-}
-*/

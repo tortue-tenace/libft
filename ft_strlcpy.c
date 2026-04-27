@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stddef.h>
-
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	len;
@@ -33,20 +31,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	dst[i] = '\0';
 	return (len);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	char	a[5];
-	char	b[5];
-	size_t	r1;
-	size_t	r2;
-
-	r1 = ft_strlcpy(a, "Hello", sizeof(a));
-	r2 = strlcpy(b, "Hello", sizeof(b));
-	printf("[%s|%zu | %s|%zu]\n", a, r1, b, r2);
-	return (0);
-}
-*/

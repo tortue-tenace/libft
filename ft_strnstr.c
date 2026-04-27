@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stddef.h>
-
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
@@ -33,13 +31,3 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	printf("[%s | %s]\n", ft_strnstr("abc", "", 3), strnstr("abc", "", 3));
-	return (0);
-}
-*/

@@ -9,8 +9,6 @@
 /*   Updated: 2026/04/24 12:27:02 by thattal          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
 #include "libft.h"
 
 static size_t	ft_count_words(char const *s, char c)
@@ -89,19 +87,3 @@ char	**ft_split(char const *s, char c)
 	result[i] = NULL;
 	return (result);
 }
-
-/*#include <stdio.h>
-int	main(void)
-{
-	char	**r;
-	int		i;
-
-	r = ft_split("  hello   world  42  ", ' ');
-	i = 0;
-	while (r[i])
-		printf("[%s]\n", r[i++]);
-	while (i--)
-		free(r[i]);
-	free(r);
-	return (0);
-}*/

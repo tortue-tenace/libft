@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stddef.h>
-
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	unsigned char	*ptr;
@@ -31,15 +29,3 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	printf("[%p | %p]\n", ft_memchr("coucou", 'u', 6), memchr("coucou", 'u', 6));
-	printf("[%p | %p]\n", ft_memchr("coucou", 'z', 6), memchr("coucou", 'z', 6));
-	printf("[%p | %p]\n", ft_memchr("coucou", 'c', 0), memchr("coucou", 'c', 0));
-	return (0);
-}
-*/

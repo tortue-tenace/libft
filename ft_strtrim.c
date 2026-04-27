@@ -27,26 +27,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 		end--;
 	return (ft_substr(s1, start, end - start));
 }
-
-/*
-#include <stdio.h>
-#include <stdlib.h>
-int	main(void)
-{
-	char	*r;
-
-	r = ft_strtrim("xxHello xx", "x");
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_strtrim("   Hello World   ", " ");
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_strtrim("aaaa", "a");
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_strtrim("Hello", "");
-	printf("[%s]\n", r);
-	free(r);
-	return (0);
-}
-*/

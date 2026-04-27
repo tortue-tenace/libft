@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stddef.h>
-
 char	*ft_strrchr(const char *str, int c)
 {
 	int	i;
@@ -29,15 +27,3 @@ char	*ft_strrchr(const char *str, int c)
 	}
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	printf("[%s | %s]\n", ft_strrchr("saucisse", 's'), strrchr("saucisse", 's'));
-	printf("[%p | %p]\n", ft_strrchr("saucisse", 'z'), strrchr("saucisse", 'z'));
-	printf("[%s | %s]\n", ft_strrchr("hello", '\0'), strrchr("hello", '\0'));
-	return (0);
-}
-*/

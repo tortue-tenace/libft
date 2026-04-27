@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stddef.h>
-
 char	*ft_strchr(const char *str, int c)
 {
 	unsigned int	i;
@@ -29,15 +27,3 @@ char	*ft_strchr(const char *str, int c)
 		return ((char *)&str[i]);
 	return (NULL);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	printf("[%s | %s]\n", ft_strchr("bonjour", 'j'), strchr("bonjour", 'j'));
-	printf("[%p | %p]\n", ft_strchr("bonjour", 'z'), strchr("bonjour", 'z'));
-	printf("[%s | %s]\n", ft_strchr("hello", '\0'), strchr("hello", '\0'));
-	return (0);
-}
-*/

@@ -9,8 +9,6 @@
 /*   Updated: 2026/04/23 11:19:26 by tattal           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdlib.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
@@ -39,25 +37,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	nstring[i + j] = '\0';
 	return (nstring);
 }
-
-/*
-#include <stdio.h>
-#include <stdlib.h>
-int	main(void)
-{
-	char	*r;
-
-	r = ft_strjoin("Hello, ", "World!");
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_strjoin("", "abc");
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_strjoin("abc", "");
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_strjoin(NULL, "x");
-	printf("[%s]\n", r ? r : "NULL");
-	return (0);
-}
-*/

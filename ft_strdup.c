@@ -12,10 +12,6 @@
 
 #include "libft.h"
 
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-
 char	*ft_strdup(const char *source)
 {
 	char	*result;
@@ -37,45 +33,3 @@ char	*ft_strdup(const char *source)
 	result[i] = '\0';
 	return (result);
 }
-
-/*int main()
-{
-    // 1. Cas normal
-    char *s1 = ft_strdup("hello");
-    printf("=== Cas normal ===\n");
-    printf("original : hello\n");
-    printf("copie    : %s\n", s1);
-   printf("meme adresse ? %d\n", strcmp(s1, "hello") == 0);
-    free(s1);
-
-    // 2. Chaine vide
-    char *s2 = ft_strdup("");
-    printf("\n=== Chaine vide ===\n");
-    printf("longueur : %ld\n", strlen(s2)); // doit afficher 0
-    printf("copie    : \"%s\"\n", s2);
-    free(s2);
-
-    // 3. Chaine avec espaces et caracteres speciaux
-    char *s3 = ft_strdup("hello world !@#");
-    printf("\n=== Caracteres speciaux ===\n");
-    printf("original : hello world !@#\n");
-    printf("copie    : %s\n", s3);
-    free(s3);
-
-
-    char original[] = "bonjour";
-    char *s4 = ft_strdup(original);
-    printf("\n=== Independance des copies ===\n");
-    s4[0] = 'B';
-    printf("original : %s\n", original); // doit afficher bonjour
-    printf("copie    : %s\n", s4);       // doit afficher Bonjour
-    free(s4);
-
-    // 5. Chaine d'un seul caractere
-    char *s5 = ft_strdup("a");
-    printf("\n=== Un seul caractere ===\n");
-    printf("copie : %s\n", s5); // doit afficher a
-    free(s5);
-
-    return 0;
-}*/

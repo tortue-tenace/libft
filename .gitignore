@@ -1,0 +1,19 @@
+# Objets de compilation
+*.o
+*.obj
+
+# Bibliotheques
+*.a
+*.so
+*.dylib
+
+# Executables
+*.out
+a.out
+
+# Fichiers d'editeur / OS
+*.swp
+*.swo
+.DS_Store
+.vscode/
+.idea/

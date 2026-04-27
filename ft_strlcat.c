@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stddef.h>
-
 size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
 	size_t	src_len;
@@ -37,20 +35,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	dst[dst_len + i] = '\0';
 	return (dst_len + src_len);
 }
-
-/*
-#include <stdio.h>
-#include <string.h>
-int	main(void)
-{
-	char	a[20] = "Hi";
-	char	b[20] = "Hi";
-	size_t	r1;
-	size_t	r2;
-
-	r1 = ft_strlcat(a, " there", sizeof(a));
-	r2 = strlcat(b, " there", sizeof(b));
-	printf("[%s|%zu | %s|%zu]\n", a, r1, b, r2);
-	return (0);
-}
-*/

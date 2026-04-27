@@ -57,9 +57,3 @@ char	*ft_itoa(int n)
 	}
 	return (result);
 }
-
-/*int	main(void)
-{
-	printf("%s\n", ft_itoa(0));
-	return (0);
-}*/

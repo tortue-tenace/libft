@@ -12,8 +12,6 @@
 
 #include "libft.h"
 
-#include <stdlib.h>
-
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substring;
@@ -41,26 +39,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substring[i] = '\0';
 	return (substring);
 }
-
-/*
-#include <stdio.h>
-#include <stdlib.h>
-int	main(void)
-{
-	char	*r;
-
-	r = ft_substr("Hello, World!", 7, 5);
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_substr("abc", 0, 42);
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_substr("abcdef", 50, 5);
-	printf("[%s]\n", r);
-	free(r);
-	r = ft_substr("tripouille", 1, 1);
-	printf("[%s]\n", r);
-	free(r);
-	return (0);
-}
-*/
